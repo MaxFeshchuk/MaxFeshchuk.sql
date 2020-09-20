@@ -7,54 +7,51 @@ To prepare for the graded coding quiz, you will be asked to execute a query, rea
 
 SQL code:</br> 
 ```SQL
-Select TrackId, Composer</br> 
-From Tracks</br> 
-Where trackid = 18;</br>
+Select TrackId, Composer 
+From Tracks
+Where trackid = 18;
 ```
 
 Result:</br> 
-| TrackId | Composer |
-|18 | AC/DC|
+|TrackId|Composer|
+|18|AC/DC|
 
 2. Run Query: Retrieve all data from the artists table. Look at the list of artists, how many artists are you familiar with (there is no wrong answer here)?
 
-----------SQL code---------</br>
-Select * </br>
-From Artists</br>
-Where ArtistId IN (1, 22);</br>
+SQL code:</br> 
+```SQL
+Select *
+From Artists
+Where ArtistId IN (1, 22);
+```
 
------------Result----------</br>
-+----------+--------------+</br>
-| ArtistId | Name         |</br>
-+----------+--------------+</br>
-|        1 | AC/DC        |</br>
-|       22 | Led Zeppelin |</br>
-+----------+--------------+</br>
+Result:</br>
+| ArtistId | Name         |
+|        1 | AC/DC        |
+|       22 | Led Zeppelin |
 
 3. Run Query: Retrieve all data from the invoices table. What is the billing address for customer 31?
 
-----------------SQL code--------------</br>
-Select CustomerId, BillingAddress</br>
-From Invoices</br>
-Where CustomerId = 31</br>
-Limit 1;</br>
+SQL code:</br> 
+```SQL
+Select CustomerId, BillingAddress
+From Invoices
+Where CustomerId = 31
+Limit 1;
+```
 
------------------Result---------------</br>
-+------------+-----------------------+</br>
-| CustomerId | BillingAddress        |</br>
-+------------+-----------------------+</br>
-|         31 | 194A Chain Lake Drive |</br>
-+------------+-----------------------+</br>
+Result:</br>
+
+| CustomerId | BillingAddress        |
+|         31 | 194A Chain Lake Drive |
 
 4. Run Query: Return the playlist id, and name from the playlists table. How many playlists are there?
 
-----------------SQL code--------------</br>
-Select Count(*) AS Count_playlists</br>
-From Playlists</br>
-
------------------Result---------------</br>
-+-----------------+</br>
-| Count_playlists |</br>
-+-----------------+</br>
-|              18 |</br>
-+-----------------+</br>
+SQL code:</br> 
+```SQL
+Select Count(*) AS Count_playlists
+From Playlists
+```
+Result:</br>
+| Count_playlists |
+|              18 |
