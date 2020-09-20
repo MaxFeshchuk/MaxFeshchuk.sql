@@ -19,7 +19,7 @@ Result:</br>
 
 Markdown | не такой | красивый
 --- | --- | ---
-*Но выводится* | `так же` | **клево**
+*Но выводится* | AC/DC | **клево**
 1 | 2 | 3
 
 2. Run Query: Retrieve all data from the artists table. Look at the list of artists, how many artists are you familiar with (there is no wrong answer here)?
