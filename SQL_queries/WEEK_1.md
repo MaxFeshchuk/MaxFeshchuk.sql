@@ -8,57 +8,54 @@ To prepare for the graded coding quiz, you will be asked to execute a query, rea
 Select TrackId, Composer</br> 
 From Tracks</br> 
 Where trackid = 18;</br> 
-------------------------
+
 ---------Result---------</br> 
 +---------+----------+</br>
-| TrackId | Composer |
+| TrackId | Composer |</br>
 +---------+----------+</br> 
-|      18 | AC/DC    |
+|      18 | AC/DC    |</br>
 +---------+----------+</br> 
-------------------------
+
 
 2. Run Query: Retrieve all data from the artists table. Look at the list of artists, how many artists are you familiar with (there is no wrong answer here)?
 
-----------SQL code---------
-Select *
-From Artists
-Where ArtistId IN (1, 22);
----------------------------
------------Result----------
-+----------+--------------+
-| ArtistId | Name         |
-+----------+--------------+
-|        1 | AC/DC        |
-|       22 | Led Zeppelin |
-+----------+--------------+
----------------------------
+----------SQL code---------</br>
+Select * </br>
+From Artists</br>
+Where ArtistId IN (1, 22);</br>
+
+-----------Result----------</br>
++----------+--------------+</br>
+| ArtistId | Name         |</br>
++----------+--------------+</br>
+|        1 | AC/DC        |</br>
+|       22 | Led Zeppelin |</br>
++----------+--------------+</br>
 
 3. Run Query: Retrieve all data from the invoices table. What is the billing address for customer 31?
 
-----------------SQL code--------------
-Select CustomerId, BillingAddress
-From Invoices
-Where CustomerId = 31
-Limit 1;
---------------------------------------
------------------Result---------------
-+------------+-----------------------+
-| CustomerId | BillingAddress        |
-+------------+-----------------------+
-|         31 | 194A Chain Lake Drive |
-+------------+-----------------------+
---------------------------------------
+----------------SQL code--------------</br>
+Select CustomerId, BillingAddress</br>
+From Invoices</br>
+Where CustomerId = 31</br>
+Limit 1;</br>
+
+-----------------Result---------------</br>
++------------+-----------------------+</br>
+| CustomerId | BillingAddress        |</br>
++------------+-----------------------+</br>
+|         31 | 194A Chain Lake Drive |</br>
++------------+-----------------------+</br>
 
 4. Run Query: Return the playlist id, and name from the playlists table. How many playlists are there?
 
-----------------SQL code--------------
-Select Count(*) AS Count_playlists
-From Playlists
---------------------------------------
------------------Result---------------
-+-----------------+
-| Count_playlists |
-+-----------------+
-|              18 |
-+-----------------+
---------------------------------------
+----------------SQL code--------------</br>
+Select Count(*) AS Count_playlists</br>
+From Playlists</br>
+
+-----------------Result---------------</br>
++-----------------+</br>
+| Count_playlists |</br>
++-----------------+</br>
+|              18 |</br>
++-----------------+</br>
