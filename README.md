@@ -4,7 +4,7 @@
 
 ## All collected queries by week:
 
-- week 1
+- [week 1](SQL_queries/WEEK_1.md)
 - week 2
 - week 3
 - week 4
