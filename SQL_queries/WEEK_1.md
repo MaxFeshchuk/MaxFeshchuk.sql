@@ -189,7 +189,7 @@ limit 10;
 Result:</br>
 
 | AlbumId | Title                                 | ArtistId |
-|--- |--- |
+|--- |--- |--- |
 |       1 | For Those About To Rock We Salute You |        1 |
 |       2 | Balls to the Wall                     |        2 |
 |       3 | Restless and Wild                     |        2 |
