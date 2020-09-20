@@ -14,9 +14,9 @@ Where trackid = 18;
 
 Result:</br> 
 
- TrackId | Composer
- --- | --- | --- 
- 18 | AC/DC 
+| TrackId | Composer|
+|--- | --- |
+| 18 | AC/DC |
 
 Markdown | не такой | красивый
 --- | --- | ---
