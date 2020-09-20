@@ -4,17 +4,17 @@ To prepare for the graded coding quiz, you will be asked to execute a query, rea
 
 1. Run query: Retrieve all the data from the tracks table. Who is the composer for track 18?
 
---------SQL code--------
-Select TrackId, Composer 
-From Tracks
-Where trackid = 18;
+--------SQL code--------</br> 
+Select TrackId, Composer</br> 
+From Tracks</br> 
+Where trackid = 18;</br> 
 ------------------------
----------Result---------
-+---------+----------+
+---------Result---------</br> 
++---------+----------+</br>
 | TrackId | Composer |
-+---------+----------+
++---------+----------+</br> 
 |      18 | AC/DC    |
-+---------+----------+
++---------+----------+</br> 
 ------------------------
 
 2. Run Query: Retrieve all data from the artists table. Look at the list of artists, how many artists are you familiar with (there is no wrong answer here)?
