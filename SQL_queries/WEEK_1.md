@@ -14,7 +14,8 @@ Where trackid = 18;
 
 Result:</br> 
 
- TrackId | Composer 
+ TrackId | Composer
+ --- | --- | --- 
  18 | AC/DC 
 
 Markdown | не такой | красивый
@@ -32,6 +33,7 @@ Where ArtistId IN (1, 22);
 ```
 
 Result:</br>
+
 | ArtistId | Name         |
 |        1 | AC/DC        |
 |       22 | Led Zeppelin |
