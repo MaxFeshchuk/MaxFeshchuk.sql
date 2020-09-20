@@ -6,15 +6,14 @@ To prepare for the graded coding quiz, you will be asked to execute a query, rea
 **1. Run query: Retrieve all the data from the tracks table. Who is the composer for track 18?**
 
 SQL code:</br> 
-
 ```SQL
-Select TrackId, Composer 
-From Tracks
-Where trackid = 18;
+SELECT TrackId
+,Composer 
+FROM Tracks
+WHERE trackid = 18;
 ```
 
 Result:</br> 
-
 | TrackId | Composer|
 |--- | --- |
 | 18 | AC/DC |
@@ -22,15 +21,13 @@ Result:</br>
 **2. Run Query: Retrieve all data from the artists table. Look at the list of artists, how many artists are you familiar with (there is no wrong answer here)?**
 
 SQL code:</br> 
-
 ```SQL
-Select *
-From Artists
-Where ArtistId IN (1, 22);
+SELECT *
+FROM Artists
+WHERE ArtistId IN (1, 22);
 ```
 
 Result:</br>
-
 | ArtistId | Name         |
 |--- | --- |
 |        1 | AC/DC        |
@@ -39,16 +36,15 @@ Result:</br>
 **3. Run Query: Retrieve all data from the invoices table. What is the billing address for customer 31?**
 
 SQL code:</br> 
-
 ```SQL
-Select CustomerId, BillingAddress
-From Invoices
-Where CustomerId = 31
-Limit 1;
+SELECT CustomerId
+,BillingAddress
+FROM Invoices
+WHERE CustomerId = 31
+LIMIT 1;
 ```
 
 Result:</br>
-
 | CustomerId | BillingAddress        |
 |--- | --- |
 |         31 | 194A Chain Lake Drive |
@@ -56,13 +52,12 @@ Result:</br>
 **4. Run Query: Return the playlist id, and name from the playlists table. How many playlists are there?**
 
 SQL code:</br>
-
 ```SQL
-Select Count(*) AS Count_playlists
-From Playlists
+SELECT Count(*) AS Count_playlists
+FROM Playlists
 ```
-Result:</br>
 
+Result:</br>
 | Count_playlists |
 |--- |
 |              18 |
@@ -70,17 +65,16 @@ Result:</br>
 **5. Run Query: Return the Customer Id, Invoice Date, and Billing City from the Invoices table. What city is associated with Customer ID number 42? What was the invoice date for the customer in Santiago?**
 
 SQL code:</br>
-
 ```SQL
-Select CustomerId,
-InvoiceDate, 
-BillingCity 
+SELECT CustomerId
+,InvoiceDate
+,BillingCity 
 FROM Invoices
 Where CustomerId = 42 or BillingCity LIKE 'Santiago'
 GROUP BY BillingCity
 ```
-Result:</br>
 
+Result:</br>
 | CustomerId | InvoiceDate         | BillingCity |
 |--- |--- |--- |
 |         42 | 2013-11-03 00:00:00 | Bordeaux    |
@@ -89,17 +83,15 @@ Result:</br>
 **6. Run Query: Return the First Name, Last Name, Email, and Phone, from the Customers table. What is the telephone number for Jennifer Peterson?**
 
 SQL code:</br>
-
 ```SQL
-Select FirstName, 
+SELECT FirstName, 
 LastName, 
 Email, 
 Phone
-From Customers
-Where FirstName=='Jennifer' and LastName=='Peterson';
+FROM Customers
+WHERE FirstName = 'Jennifer' AND LastName = 'Peterson';
 ```
 Result:</br>
-
 | FirstName | LastName | Email               | Phone             |
 |--- |--- |--- |--- |
 | Jennifer  | Peterson | jenniferp@rogers.ca | +1 (604) 688-2255 |
@@ -107,18 +99,18 @@ Result:</br>
 **7. Run Query: Return the Track Id, Genre Id, Composer, Unit Price from the Tracks table. How much do these tracks cost?**
 
 SQL code:</br>
-
 ```SQL
-Select --TrackId, 
+SELECT --TrackId, 
 --GenreId, 
 --Composer, 
-UnitPrice, Count(UnitPrice) As Count_Price
+UnitPrice
+,Count(UnitPrice) AS Count_Price
 --, Sum(UnitPrice) As TotalPrice
-From Tracks
-Group BY UnitPrice;
+FROM Tracks
+GROUP BY UnitPrice;
 ```
-Result:</br>
 
+Result:</br>
 | UnitPrice | Count_Price |
 |--- |--- |
 |      0.99 |        3290 |
@@ -127,14 +119,13 @@ Result:</br>
 **8. Run Query: Select all the columns from the Playlist Track table and limit the results to 10 records. How might this information be used?**
 
 SQL code:</br>
-
 ```SQL
-Select *
-From Playlist_track 
-Limit 10;
+SELECT *
+FROM Playlist_track 
+LIMIT 10;
 ```
-Result:</br>
 
+Result:</br>
 | PlaylistId | TrackId |
 |--- |--- |
 |          1 |    3402 |
@@ -151,14 +142,12 @@ Result:</br>
 **9. Run Query: Select all the columns from the Media Types table and limit the results to 50 records. What happened when you ran this query? Were you able to get all 50 records?**
 
 SQL code:</br>
-
 ```SQL
 Select *
 From Playlist_track 
 Limit 10;
 ```
 Result:</br>
-
 | PlaylistId | TrackId |
 |--- |--- |
 |          1 |    3402 |
@@ -177,14 +166,10 @@ Result:</br>
 SQL code:</br>
 
 ```SQL
-/*Select *
-From Albums
-Order by AlbumId DESC  
-limit 5;*/
-Select *
-From Albums
+SELECT *
+FROM Albums
 --Where AlbumId = 9
-limit 10;
+LIMIT 5;
 ```
 Result:</br>
 
@@ -199,4 +184,5 @@ Result:</br>
 |       7 | Facelift                              |        5 |
 |       8 | Warner 25 Anos                        |        6 |
 |       9 | Plays Metallica By Four Cellos        |        7 |
-|      10 | Audioslave                            |        8 |
+
+*left to [Rubricator](../README.md)*
