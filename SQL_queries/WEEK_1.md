@@ -6,6 +6,7 @@ To prepare for the graded coding quiz, you will be asked to execute a query, rea
 1. Run query: Retrieve all the data from the tracks table. Who is the composer for track 18?
 
 SQL code:</br> 
+
 ```SQL
 Select TrackId, Composer 
 From Tracks
@@ -18,14 +19,10 @@ Result:</br>
 |--- | --- |
 | 18 | AC/DC |
 
-Markdown | не такой | красивый
---- | --- | ---
-*Но выводится* | AC/DC | **клево**
-1 | 2 | 3
-
 2. Run Query: Retrieve all data from the artists table. Look at the list of artists, how many artists are you familiar with (there is no wrong answer here)?
 
 SQL code:</br> 
+
 ```SQL
 Select *
 From Artists
@@ -35,12 +32,14 @@ Where ArtistId IN (1, 22);
 Result:</br>
 
 | ArtistId | Name         |
+|--- | --- |
 |        1 | AC/DC        |
 |       22 | Led Zeppelin |
 
 3. Run Query: Retrieve all data from the invoices table. What is the billing address for customer 31?
 
 SQL code:</br> 
+
 ```SQL
 Select CustomerId, BillingAddress
 From Invoices
@@ -51,15 +50,19 @@ Limit 1;
 Result:</br>
 
 | CustomerId | BillingAddress        |
+|--- | --- |
 |         31 | 194A Chain Lake Drive |
 
 4. Run Query: Return the playlist id, and name from the playlists table. How many playlists are there?
 
-SQL code:</br> 
+SQL code:</br>
+
 ```SQL
 Select Count(*) AS Count_playlists
 From Playlists
 ```
 Result:</br>
+
 | Count_playlists |
+|--- |
 |              18 |
