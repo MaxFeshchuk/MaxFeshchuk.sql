@@ -13,8 +13,14 @@ Where trackid = 18;
 ```
 
 Result:</br> 
+
 |TrackId|Composer|
 |18|AC/DC|
+
+Markdown | не такой | красивый
+--- | --- | ---
+*Но выводится* | `так же` | **клево**
+1 | 2 | 3
 
 2. Run Query: Retrieve all data from the artists table. Look at the list of artists, how many artists are you familiar with (there is no wrong answer here)?
 
