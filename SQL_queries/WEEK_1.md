@@ -66,3 +66,22 @@ Result:</br>
 | Count_playlists |
 |--- |
 |              18 |
+
+5. Run Query: Return the Customer Id, Invoice Date, and Billing City from the Invoices table. What city is associated with Customer ID number 42? What was the invoice date for the customer in Santiago?
+
+SQL code:</br>
+
+```SQL
+Select CustomerId,
+InvoiceDate, 
+BillingCity 
+From Invoices
+Where CustomerId = 42
+--Where BillingCity == 'Santiago'
+Limit 1;
+```
+Result:</br>
+
+| Count_playlists |
+|--- |
+|              18 |
