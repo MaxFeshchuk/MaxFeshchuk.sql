@@ -12,4 +12,4 @@
 	- [Practice Quiz](SQL_queries/WEEK_3.md#practice-quiz)
 	- [Module 3 Coding Assignment](SQL_queries/WEEK_3.md#module-3-coding-assignment)
 - [week 4 (Module 4 Coding Questions)](SQL_queries/WEEK_4.md)
-- [final work (Data Scientist Role Play: Profiling and Analyzing the Yelp Dataset)](SQL_queries/final_work.md)
+- [final work (Data Scientist Role Play: Profiling and Analyzing the Yelp Dataset)](SQL_queries/Final_work.md)
