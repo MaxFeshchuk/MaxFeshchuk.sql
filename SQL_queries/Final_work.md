@@ -33,17 +33,17 @@ intact for you reviewer.
 **1. Profile the data by finding the total number of records for each of the tables 
 below:**
 
-1. Attribute table = 10000;
-2. Business table = 10000;
-3. Category table = 10000;
-4. Checkin table = 10000;
-5. elite_years table = 10000;
-6. friend table = 10000;
-7. hours table = 10000;
-8. photo table = 10000;
-9. review table = 10000;
-10. tip table = 10000;
-11. user table = 10000.
+	1. Attribute table = 10000;
+	2. Business table = 10000;
+	3. Category table = 10000;
+	4. Checkin table = 10000;
+	5. elite_years table = 10000;
+	6. friend table = 10000;
+	7. hours table = 10000;
+	8. photo table = 10000;
+	9. review table = 10000;
+	10. tip table = 10000;
+	11. user table = 10000.
 
 SQL code:</br> 
 ```SQL
