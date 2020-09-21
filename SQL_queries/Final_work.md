@@ -55,17 +55,17 @@ FROM [Name of table];
 each table. If two foreign keys are listed in the table, please specify which 
 foreign key.**
 
-1. Business = id: 10000;
-2. Hours = business_id: 1562;
-3. Category = business_id: 2643;
-4. Attribute = business_id: 1115;
-5. Review = id: 10000, business_id: 8090, user_id: 9581;
-6. Checkin = business_id: 493;
-7. Photo = id: 10000, business_id: 6493;
-8. Tip = user_id: 537, business_id: 3979;
-9. User = id: 10000;
-10. Friend = user_id: 11;
-11. Elite_years = user_id: 2780.
+	1. Business = id: 10000;
+	2. Hours = business_id: 1562;
+	3. Category = business_id: 2643;
+	4. Attribute = business_id: 1115;
+	5. Review = id: 10000, business_id: 8090, user_id: 9581;
+	6. Checkin = business_id: 493;
+	7. Photo = id: 10000, business_id: 6493;
+	8. Tip = user_id: 537, business_id: 3979;
+	9. User = id: 10000;
+	10. Friend = user_id: 11;
+	11. Elite_years = user_id: 2780.
 
 Note: Primary Keys are denoted in the ER-Diagram with a yellow key icon.
 
