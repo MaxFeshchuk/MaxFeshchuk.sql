@@ -6,8 +6,8 @@
 
 - [week 1 (Practice Simple Select Queries)](SQL_queries/WEEK_1.md)
 - [week 2](SQL_queries/WEEK_2.md)
-	-Practice Quiz
-	-Module 2 Coding Assignment
+	- Practice Quiz
+	- Module 2 Coding Assignment
 - [week 3](SQL_queries/WEEK_3.md)
 - [week 4](SQL_queries/WEEK_4.md)
 - final work
