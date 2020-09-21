@@ -115,6 +115,10 @@ WHERE id is NULL
 	OR compliment_photos is NULL;
 ```
 
+Result:</br>
+(Zero rows)
+
+
 **4. For each table and column listed below, display the smallest (minimum), 
 largest (maximum), and average (mean) value for the following fields:**
 
@@ -128,13 +132,13 @@ largest (maximum), and average (mean) value for the following fields:**
 
 | min | max | avg    |
 |---  |---  |---     |
-| 1.0   | 5.0   | 3.6549 | 
+| 1.0 | 5.0 | 3.6549 | 
 
 3. Table: Tip, Column: Likes
 
 | min | max | avg    |
 |---  |---  |---     |
-| 0   | 2  | 0.0144 | 	
+| 0   | 2   | 0.0144 | 	
 	
 4. Table: Checkin, Column: Count
 
@@ -146,7 +150,7 @@ largest (maximum), and average (mean) value for the following fields:**
 
 | min | max | avg    |
 |---  |---  |---     |
-| 0   | 2000  | 24.2995 |	
+| 0   | 2000| 24.2995|	
 
 SQL code:</br> 
 ```SQL
@@ -206,7 +210,7 @@ cities**
 SQL code:</br> 
 ```SQL
 SELECT Stars AS Star_Ruting
-,SUM(review_count) AS Count 
+,COUNT(review_count) AS Count 
 FROM business
 WHERE city = 'Avon'
 GROUP BY stars;
@@ -215,19 +219,19 @@ GROUP BY stars;
 Copy and Paste the Resulting Table Below (2 columns – star rating and count):
 | Star_Ruting | Count |
 |---          |---    |
-|         1.5 |    10 |
-|         2.5 |     6 |
-|         3.5 |    88 |
-|         4.0 |    21 |
-|         4.5 |    31 |
-|         5.0 |     3 |
+|         1.5 |     1 |
+|         2.5 |     2 |
+|         3.5 |     3 |
+|         4.0 |     2 |
+|         4.5 |     1 |
+|         5.0 |     1 |
 
 2. Beachwood
 
 SQL code:</br> 
 ```SQL
 SELECT Stars AS Star_Ruting
-,SUM(review_count) AS Count 
+,COUNT(review_count) AS Count 
 FROM business
 WHERE city = 'Beachwood'
 GROUP BY stars;
@@ -236,13 +240,13 @@ GROUP BY stars;
 Copy and Paste the Resulting Table Below (2 columns – star rating and count):
 | Star_Ruting | Count |
 |---          |---    |
-|         2.0 |     8 |
-|         2.5 |     3 |
-|         3.0 |    11 |
-|         3.5 |     6 |
-|         4.0 |    69 |
-|         4.5 |    17 |
-|         5.0 |    23 |
+|         2.0 |     1 |
+|         2.5 |     1 |
+|         3.0 |     2 |
+|         3.5 |     2 |
+|         4.0 |     1 |
+|         4.5 |     2 |
+|         5.0 |     5 |
 
 **7. Find the top 3 users based on their total number of reviews:**
 
