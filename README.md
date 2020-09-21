@@ -11,5 +11,5 @@
 - [week 3](SQL_queries/WEEK_3.md)
 	- [Practice Quiz](SQL_queries/WEEK_3.md#practice-quiz)
 	- [Module 3 Coding Assignment](SQL_queries/WEEK_3.md#module-3-coding-assignment)
-- [week 4](SQL_queries/WEEK_4.md)
+- [week 4 (Module 4 Coding Questions)](SQL_queries/WEEK_4.md)
 - final work
