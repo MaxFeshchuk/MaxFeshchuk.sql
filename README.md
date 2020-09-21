@@ -4,8 +4,8 @@
 
 ## All collected queries by week:
 
-- [week 1](SQL_queries/WEEK_1.md)
-- week 2
-- week 3
-- week 4
+- [week 1 (Practice Simple Select Queries)](SQL_queries/WEEK_1.md)
+- [week 2](SQL_queries/WEEK_2.md)
+- [week 3](SQL_queries/WEEK_3.md)
+- [week 4](SQL_queries/WEEK_4.md)
 - final work
