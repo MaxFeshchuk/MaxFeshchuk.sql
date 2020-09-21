@@ -22,9 +22,9 @@ Result:</br>
 
 SQL code:</br> 
 ```SQL
-SELECT *
-FROM Artists
-WHERE ArtistId IN (1, 22);
+Select *
+From Artists
+Where Name IN ("AC/DC", "Led Zeppelin");
 ```
 
 Result:</br>
@@ -37,11 +37,11 @@ Result:</br>
 
 SQL code:</br> 
 ```SQL
-SELECT CustomerId
+Select CustomerId
 ,BillingAddress
-FROM Invoices
-WHERE CustomerId = 31
-LIMIT 1;
+From Invoices
+Where CustomerId == 31
+GROUP BY BillingAddress;
 ```
 
 Result:</br>
@@ -53,14 +53,41 @@ Result:</br>
 
 SQL code:</br>
 ```SQL
-SELECT Count(*) AS Count_playlists
-FROM Playlists
+Select MAX(PlaylistId) AS Count_playlists
+From Playlists;
 ```
 
 Result:</br>
 | Count_playlists |
 |--- |
 |              18 |
+
+**Which would you classify is your favorite from this list?**
+
+SQL code:</br>
+```SQL
+Select *
+From Playlists
+GROUP BY Name;
+```
+
+| PlaylistId | Name                       |
+|--- |--- |
+|          5 | 90’s Music                 |
+|          6 | Audiobooks                 |
+|         11 | Brazilian Music            |
+|         12 | Classical                  |
+|         13 | Classical 101 - Deep Cuts  |
+|         14 | Classical 101 - Next Steps |
+|         15 | Classical 101 - The Basics |
+|         16 | Grunge                     |
+|         17 | Heavy Metal Classic        |
+|          7 | Movies                     |
+|          8 | Music                      |
+|          9 | Music Videos               |
+|         18 | On-The-Go 1                |
+|         10 | TV Shows                   |
+
 
 **5. Run Query: Return the Customer Id, Invoice Date, and Billing City from the Invoices table. What city is associated with Customer ID number 42? What was the invoice date for the customer in Santiago?**
 
@@ -71,7 +98,7 @@ SELECT CustomerId
 ,BillingCity 
 FROM Invoices
 Where CustomerId = 42 or BillingCity LIKE 'Santiago'
-GROUP BY BillingCity
+GROUP BY BillingCity;
 ```
 
 Result:</br>
@@ -100,89 +127,105 @@ Result:</br>
 
 SQL code:</br>
 ```SQL
-SELECT --TrackId, 
---GenreId, 
---Composer, 
-UnitPrice
-,Count(UnitPrice) AS Count_Price
---, Sum(UnitPrice) As TotalPrice
-FROM Tracks
-GROUP BY UnitPrice;
+Select TrackId
+,GenreId
+,UnitPrice
+From Tracks;
 ```
 
 Result:</br>
-| UnitPrice | Count_Price |
-|--- |--- |
-|      0.99 |        3290 |
-|      1.99 |         213 |
+| TrackId | GenreId | UnitPrice |
+|--- |--- |--- |
+|       1 |       1 |      0.99 |
+|       2 |       1 |      0.99 |
+|       3 |       1 |      0.99 |
+|       4 |       1 |      0.99 |
+|       5 |       1 |      0.99 |
+|       6 |       1 |      0.99 |
+|       7 |       1 |      0.99 |
+|       8 |       1 |      0.99 |
+|       9 |       1 |      0.99 |
+|      10 |       1 |      0.99 |
+|      11 |       1 |      0.99 |
+|      12 |       1 |      0.99 |
+|      13 |       1 |      0.99 |
+|      14 |       1 |      0.99 |
+|      15 |       1 |      0.99 |
+|      16 |       1 |      0.99 |
+|      17 |       1 |      0.99 |
+|      18 |       1 |      0.99 |
+|      19 |       1 |      0.99 |
+|      20 |       1 |      0.99 |
+|      21 |       1 |      0.99 |
+|      22 |       1 |      0.99 |
+|      23 |       1 |      0.99 |
+|      24 |       1 |      0.99 |
+|      25 |       1 |      0.99 |
++---------+---------+-----------+
+(Output limit exceeded, 25 of 3503 total rows shown)
 
 **8. Run Query: Select all the columns from the Playlist Track table and limit the results to 10 records. How might this information be used?**
 
 SQL code:</br>
 ```SQL
-SELECT *
-FROM Playlist_track 
-LIMIT 10;
+Select PlaylistId
+,Count(TrackId) AS Contain_tracks 
+From Playlist_track 
+GROUP BY PlaylistId
+ORDER BY PlaylistId ASC
+Limit 10;
 ```
 
 Result:</br>
-| PlaylistId | TrackId |
+
+| PlaylistId | Contain_tracks |
 |--- |--- |
-|          1 |    3402 |
-|          1 |    3389 |
-|          1 |    3390 |
-|          1 |    3391 |
-|          1 |    3392 |
-|          1 |    3393 |
-|          1 |    3394 |
-|          1 |    3395 |
-|          1 |    3396 |
-|          1 |    3397 |
+|          1 |           3290 |
+|          3 |            213 |
+|          5 |           1477 |
+|          8 |           3290 |
+|          9 |              1 |
+|         10 |            213 |
+|         11 |             39 |
+|         12 |             75 |
+|         13 |             25 |
+|         14 |             25 |
+
+We can determine how many tracks the playlist has
 
 **9. Run Query: Select all the columns from the Media Types table and limit the results to 50 records. What happened when you ran this query? Were you able to get all 50 records?**
 
 SQL code:</br>
 ```SQL
 Select *
-From Playlist_track 
-Limit 10;
+From Media_types
+Limit 50;
 ```
 Result:</br>
-| PlaylistId | TrackId |
+| MediaTypeId | Name                        |
 |--- |--- |
-|          1 |    3402 |
-|          1 |    3389 |
-|          1 |    3390 |
-|          1 |    3391 |
-|          1 |    3392 |
-|          1 |    3393 |
-|          1 |    3394 |
-|          1 |    3395 |
-|          1 |    3396 |
-|          1 |    3397 |
+|           1 | MPEG audio file             |
+|           2 | Protected AAC audio file    |
+|           3 | Protected MPEG-4 video file |
+|           4 | Purchased AAC audio file    |
+|           5 | AAC audio file              |
+
+No couln't, because the table contains less than 50 rows
 
 **10. Run Query: Select all the columns from the Albums table and limit the results to 5 records. How many columns are in the albums table? What is the name of the 9th album in this list?**
 
 SQL code:</br>
-
 ```SQL
-SELECT *
-FROM Albums
---Where AlbumId = 9
-LIMIT 5;
+Select *
+From Albums
+Where AlbumId = 9;
 ```
+
 Result:</br>
 
-| AlbumId | Title                                 | ArtistId |
+| AlbumId | Title                          | ArtistId |
 |--- |--- |--- |
-|       1 | For Those About To Rock We Salute You |        1 |
-|       2 | Balls to the Wall                     |        2 |
-|       3 | Restless and Wild                     |        2 |
-|       4 | Let There Be Rock                     |        1 |
-|       5 | Big Ones                              |        3 |
-|       6 | Jagged Little Pill                    |        4 |
-|       7 | Facelift                              |        5 |
-|       8 | Warner 25 Anos                        |        6 |
-|       9 | Plays Metallica By Four Cellos        |        7 |
+|       9 | Plays Metallica By Four Cellos |        7 |
+
 
 *left to [Rubricator](../README.md)*
