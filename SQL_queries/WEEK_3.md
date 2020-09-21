@@ -7,7 +7,7 @@
 
 **All of the questions in this quiz pull from the open source Chinook Database. Please refer to the ER Diagram below and familiarize yourself with the table and column names to write accurate queries and get the appropriate answers.**
 
-![Chinook_Database](SQL_queries/images/Chinook_Database.png)
+![Database](SQL_queries/images/Chinook_Database.png)
 
 **1. How many albums does the artist Led Zeppelin have?**
 
