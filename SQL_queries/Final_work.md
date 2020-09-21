@@ -259,7 +259,7 @@ Please explain your findings and interpretation of the results:
 	
 Not always. For example, consider Amy at the top of the list, which has 503 
 fans and 609 reviews, while Mimi (second on the list) has more reviews (968),
- but fewer fans. And this trend is also observed in some people below the 
+but fewer fans. And this trend is also observed in some people below the 
 list. Therefore, more criteria are needed to determine the dependence.
 
 SQL code:</br> 
@@ -308,9 +308,9 @@ them?**
 Answer:
 
 There are 1726 reviews with “love” and 178 reviews with “hate” and 54 that 
-contains both “love” and “hate”
-As result:
-Love: 1726 + 54 = 1780 reviews
+contains both “love” and “hate”</br>
+As result:</br>
+Love: 1726 + 54 = 1780 reviews</br>
 Hate: 178 + 54 = 232 reviews
 
 SQL code:</br> 
@@ -462,7 +462,6 @@ WHERE b.city = 'Toronto' AND c.category = 'Restaurants'
 GROUP BY b.stars
 ORDER BY b.review_count DESC;
 ```
-
 
 Result:
 | Review | Business      | city    | category    | stars | hours                | address               |
