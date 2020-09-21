@@ -33,6 +33,10 @@ your answers and code are lined appropriately.
 In this case, you may want to save as a PDF to ensure your formatting remains 
 intact for you reviewer.
 
+Yelp dataset
+
+![ER diagram](images/Yelp_Dataset.png)
+
 ## Part 1: Yelp Dataset Profiling and Understanding
 
 **1. Profile the data by finding the total number of records for each of the tables 
