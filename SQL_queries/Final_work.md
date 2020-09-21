@@ -293,23 +293,8 @@ Result:
 | William   |         1215 |  126 |
 | Fran      |          862 |  124 |
 | Lissa     |          834 |  120 |
-| Mark      |          861 |  115 |
-| Tiffany   |          408 |  111 |
-| bernice   |          255 |  105 |
-| Roanna    |         1039 |  104 |
-| Angela    |          694 |  101 |
-| .Hon      |         1246 |  101 |
-| Ben       |          307 |   96 |
-| Linda     |          584 |   89 |
-| Christina |          842 |   85 |
-| Jessica   |          220 |   84 |
-| Greg      |          408 |   81 |
-| Nieves    |          178 |   80 |
-| Sui       |          754 |   78 |
-| Yuri      |         1339 |   76 |
-| Nicole    |          161 |   73 |
 
-(Output limit exceeded, 25 of 10000 total rows shown)
+(Output limit exceeded, 10 of 10000 total rows shown)
 
 **9. Are there more reviews with the word "love" or with the word "hate" in 
 them?**
