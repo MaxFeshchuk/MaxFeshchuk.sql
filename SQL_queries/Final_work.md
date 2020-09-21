@@ -2,7 +2,7 @@
 
 *left to [Rubricator](../README.md)*
 
-Chapters:
+Chapters:</br>
 [Data Scientist Role Play: Profiling and Analyzing the Yelp Dataset](Final_work.md#data-scientist-role-play-profiling-and-analyzing-the-yelp-dataset)
 - [Part 1: Yelp Dataset Profiling and Understanding](Final_work.md#part-1-yelp-dataset-profiling-and-understanding)
 - [Part 2: Inferences and Analysis](Final_work.md#part-2-inferences-and-analysis)
